@@ -1,0 +1,158 @@
+/**
+* @file style.css
+* @author Pedro Rogerio, <http://www.pinceladasdaweb.com.br>
+* @copyright (c) 2013, Pedro Rogerio
+* @version 1.0.0
+* @License Licensed under the MIT License.
+*/
+
+/**
+* @section Reset styles
+* These styles reset the default style sheet that comes with the user agent.
+*/
+html {
+  overflow-y: scroll;
+  min-height: 100
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd, fieldset, blockquote, pre, textarea {
+  margin: 0
+}
+
+ul, ol, td, th, fieldset, legend {
+  padding: 0
+}
+
+a {
+  text-decoration: none
+}
+
+a img {
+	border: 0
+}
+
+.cf:before, .cf:after {
+	content:" ";
+	display:table
+}
+
+.cf:after {
+	clear:both
+}
+
+/**
+* @section HTML5 Elements
+* Set display:block for HTML5 block elements
+*/
+main, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block
+}
+
+/**
+* @section Fonts
+* Custom Fonts here
+*/
+@font-face {
+    font-family: 'DroidSansRegular';
+    src: url('fonts/DroidSans-webfont.eot');
+    src: url('fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DroidSans-webfont.woff') format('woff'),
+         url('fonts/DroidSans-webfont.ttf') format('truetype'),
+         url('fonts/DroidSans-webfont.svg#DroidSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SortsMillGoudyItalic';
+    src: url('fonts/GoudyStM-Italic-webfont.eot');
+    src: url('fonts/GoudyStM-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/GoudyStM-Italic-webfont.woff') format('woff'),
+         url('fonts/GoudyStM-Italic-webfont.ttf') format('truetype'),
+         url('fonts/GoudyStM-Italic-webfont.svg#SortsMillGoudyItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**
+* @section Main
+* Custom Styles
+*/
+body {
+	background: #EDEDED url(../img/noise.png) repeat;
+  font-size: 62.5%
+}
+
+h1 {
+	color: #6F6F6F;
+	font: 3em 'SortsMillGoudyItalic';
+	margin:10px 0 30px;
+	text-align: center
+}
+
+.loading {
+	display: block;
+	margin: 0 auto
+}
+
+/**
+* @section Lastfm
+* Custom Styles for Last.fm Recent Tracks
+*/
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px 15px
+}
+
+.lastfm {
+	float: left;
+	position: relative;
+	margin-bottom: 25px;
+	width: 320px
+}
+
+.lastfm .highlight {
+	height: 125px;
+  left: -13px;
+  position: absolute;
+  top: -1px;
+  width: 153px;
+}
+
+.lastfm .cover {
+	float: left;
+}
+
+.lastfm .cover > img {
+    height: 120px;
+    max-width: none;
+    width: 120px
+}
+
+.lastfm .info {
+	color: #6F6F6F;
+	float: left;
+	font-family: 'DroidSansRegular';
+	margin-left: 25px;
+	width: 165px;
+}
+
+.lastfm .info p {
+	font-size: 1.1em;
+	line-height: 16px;
+	margin-bottom: 4px;
+	padding-left: 20px
+}
+
+.lastfm .song {
+	background: url(../img/icon-song.png) no-repeat left 4px;
+}
+
+.lastfm .artist {
+	background: url(../img/icon-artist.png) no-repeat left 4px;
+}
+
+.lastfm .album {
+	background: url(../img/icon-album.png) no-repeat left 4px;
+}
