@@ -37,7 +37,11 @@ Lastfm.init({
                 <a href="{{link}}" title="{{song}}">
                     <img src="img/vinyl.png" class="highlight">
                 </a>
+                {{#if image}}
                 <img alt="{{album}}" src="{{image}}">
+                {{else}}
+                <img alt="{{album}}" src="img/noartwork.png">
+                {{/if}}
             </div>
             <div class="info">
                 <p class="song">{{song}}</p>
