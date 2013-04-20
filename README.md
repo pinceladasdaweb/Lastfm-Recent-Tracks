@@ -8,6 +8,7 @@ Get User Recent Tracks in Last.fm with jQuery and Handlebars.
 1. Paste right before your page's closing `</body>` tag
 ```html
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/thirdparty/jquery.min.js"><\/script>')</script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.min.js"></script>
 <script src="js/app.js"></script>
 ```
@@ -15,11 +16,11 @@ Get User Recent Tracks in Last.fm with jQuery and Handlebars.
 2. From within a script tag or a JS file
 ```javascript
 Lastfm.init({
-	template: $('#tracks-template').html(), // The ID of your template
-	container: $('.container'),				// domNode to attach to
-	username: 'rj',							// Last.fm username
-	count: 18,								// Number of tracks to display. Maximum is 200
-	apikey: '<API KEY HERE>' 				// Your API Key here.
+    template: $('#tracks-template').html(), // The ID of your template
+    container: $('.container'),				// domNode to attach to
+    username: 'rj',							// Last.fm username
+    count: 18,								// Number of tracks to display. Maximum is 200
+    apikey: '<API KEY HERE>' 				// Your API Key here.
 })
 ```
 
