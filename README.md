@@ -1,4 +1,4 @@
-[Lastfm Recent Tracks](http://cssnolanche.com.br/lab/lastfm/)
+[Lastfm Recent Tracks](http://www.pinceladasdaweb.com.br/blog/uploads/lastfm/)
 =================
 
 Get User Recent Tracks in Last.fm with jQuery and Handlebars.
